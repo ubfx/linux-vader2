@@ -13,3 +13,6 @@
 [submodule "meta-avnet"]
 	path = meta-avnet
 	url = git@github.com:Avnet/meta-avnet.git
+[submodule "meta-clang"]
+	path = meta-clang
+	url = https://github.com/kraj/meta-clang
