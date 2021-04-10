@@ -1,0 +1,15 @@
+[submodule "poky"]
+	path = poky
+	url = git://git.yoctoproject.org/poky
+[submodule "meta-xilinx"]
+	path = meta-xilinx
+	url = git://git.yoctoproject.org/meta-xilinx
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
+[submodule "meta-xilinx-tools"]
+	path = meta-xilinx-tools
+	url = git@github.com:Xilinx/meta-xilinx-tools.git
+[submodule "meta-avnet"]
+	path = meta-avnet
+	url = git@github.com:Avnet/meta-avnet.git
