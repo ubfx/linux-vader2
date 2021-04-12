@@ -10,12 +10,12 @@
 [submodule "meta-xilinx-tools"]
 	path = meta-xilinx-tools
 	url = git@github.com:Xilinx/meta-xilinx-tools.git
-[submodule "meta-avnet"]
-	path = meta-avnet
-	url = git@github.com:Avnet/meta-avnet.git
 [submodule "meta-clang"]
 	path = meta-clang
 	url = https://github.com/kraj/meta-clang
 [submodule "meta-vader2"]
 	path = meta-vader2
 	url = git@github.com:ubfx/meta-vader2.git
+[submodule "meta-avnet"]
+	path = meta-avnet
+	url = git@github.com:ubfx/meta-avnet.git
