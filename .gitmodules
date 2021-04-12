@@ -12,8 +12,8 @@
 	branch = gatesgarth
 [submodule "meta-xilinx-tools"]
 	path = meta-xilinx-tools
-	url = git@github.com:Xilinx/meta-xilinx-tools.git
-	branch = rel-v2020.3
+	url = git@github.com:ubfx/meta-xilinx-tools.git
+	branch = gatesgarth-compat
 [submodule "meta-clang"]
 	path = meta-clang
 	url = https://github.com/kraj/meta-clang
