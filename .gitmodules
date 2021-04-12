@@ -3,7 +3,8 @@
 	url = git://git.yoctoproject.org/poky
 [submodule "meta-xilinx"]
 	path = meta-xilinx
-	url = git://git.yoctoproject.org/meta-xilinx
+	url = git@github.com:Xilinx/meta-xilinx.git
+	branch = gatesgarth
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
@@ -11,13 +12,15 @@
 [submodule "meta-xilinx-tools"]
 	path = meta-xilinx-tools
 	url = git@github.com:Xilinx/meta-xilinx-tools.git
+	branch = rel-v2020.3
 [submodule "meta-clang"]
 	path = meta-clang
 	url = https://github.com/kraj/meta-clang
+	branch = gatesgarth
 [submodule "meta-vader2"]
 	path = meta-vader2
 	url = git@github.com:ubfx/meta-vader2.git
 [submodule "meta-avnet"]
 	path = meta-avnet
 	url = git@github.com:ubfx/meta-avnet.git
-	branch = 2020.2
+	branch = gatesgarth
