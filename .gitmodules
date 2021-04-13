@@ -4,8 +4,8 @@
 	branch = gatesgarth
 [submodule "meta-xilinx"]
 	path = meta-xilinx
-	url = git@github.com:Xilinx/meta-xilinx.git
-	branch = gatesgarth
+	url = git@github.com:ubfx/meta-xilinx.git
+	branch = zynqmp_prebootenv
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
