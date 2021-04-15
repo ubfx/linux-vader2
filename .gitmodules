@@ -24,4 +24,4 @@
 [submodule "meta-avnet"]
 	path = meta-avnet
 	url = git@github.com:ubfx/meta-avnet.git
-	branch = gatesgarth
+	branch = 2020.2
