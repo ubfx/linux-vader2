@@ -21,7 +21,3 @@
 [submodule "meta-vader2"]
 	path = meta-vader2
 	url = git@github.com:ubfx/meta-vader2.git
-[submodule "meta-avnet"]
-	path = meta-avnet
-	url = git@github.com:ubfx/meta-avnet.git
-	branch = 2020.2
