@@ -35,6 +35,6 @@ Spezifische Informationen zur Konfiguration des Vader2-Layers (Kernelkonfigurati
 ## Hardware / Bitstream ändern
 Aus Vivado kann eine .xsa-Datei exportiert werden, die die Konfiguration der Logik, des Prozessorsystems, der Interconnects usw. beinhaltet. Dazu nach erstellen des Bitstreams in Vivado auf *File->Export->Export Hardware* und anschließend *Include Bitstream* auswählen.
 
-Die erzeugte .xsa-Datei wird in `system.xsa` umbenannt und in das Verzeichnis `build` bzw. `poky/build` kopiert. Wird anschließend das vader2-image neu gebaut, lädt der Bootloader die Hardware-Konfiguration automatisch beim Starten des Kernels.
+Die erzeugte .xsa-Datei wird in `vader2.xsa` umbenannt und in das Verzeichnis `build` bzw. `poky/build` kopiert. Wird anschließend das vader2-image neu gebaut, lädt der Bootloader die Hardware-Konfiguration automatisch beim Starten des Kernels.
 
 Zum schnellen Testen empfiehlt es sich aber, Logik-Designs direkt aus Vivado über JTAG in die Programmierbare Logik zu flashen. Das funktioniert auch während der Prozessor/Linux läuft.
