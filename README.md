@@ -1,16 +1,28 @@
 ### Linux-Vader2
 Dieses Repository dient zum Bauen der Linux-Vader2-Distribution.
 
+## Grundkonfiguration
+Die Grundkonfigurationsdatei findet sich unter `build/local.conf`. Dort müssen Verzeichnisse für Downloads, Cache und das Ausgabeverzeichnis festgelegt werden.
+
 ## Layers
 Die einzelnen Yocto-Layer sind als Submodule referenziert, müssen also entsprechend gecloned werden.
 
 ## Allgemeine Anleitungen
 Eine allgemeine Anleitung zur Verwendung von Yocto findet sich unter https://docs.yoctoproject.org/
 
-## Erstellung von SD-Images
+## Einfacher Build-Prozess
+Wenn Yocto entsprechend der Anleitung in der Yocto-Dokumentation korrekt installiert, alle Submodule gecloned sind und die Einstellungen in `local.conf` korrekt sind, kann die Distribution gebaut werden.
+
+```
+$ cd poky
+$ source oe-init-build-env
+$ bitbake vader2-image
+```
+
+## Erstellung von SD-Karten
 Nach dem erfolgreichen Bauen der Distribution liegen ein Kernel-Image, sowie ein Bootloader, ein Bootloader-Skript und das rootfs im Ausgabeverzeichnis.
 
-Eine Anleitung zur Formatierung der SD-Karte findet sich unter https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842385/How+to+format+SD+card+for+SD+boot
+Eine Anleitung zur Formatierung der SD-Karte findet sich im [Xilinx Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842385/How+to+format+SD+card+for+SD+boot)
 Nach der Formatierung müssen das Kernel-Image (Dateiname "Image"), der Bootloader (Dateiname "boot.bin") und das Bootloader-Skript (Dateiname "boot.scr") auf die Boot-Partition kopiert werden.
 Das rootfs muss auf die ext4-Partition kopiert werden.
 
