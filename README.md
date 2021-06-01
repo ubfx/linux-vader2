@@ -31,3 +31,10 @@ Die Einstellungen für die WLAN-Verbindung finden sich im rootfs unter `/etc/wpa
 Falls das WLAN sich nicht verbindet, kann es helfen, über die serielle Konsole `/etc/init.d/networking restart` auszuführen.
 
 Spezifische Informationen zur Konfiguration des Vader2-Layers (Kernelkonfiguration, Hinzufügen/Entfernen von Software, ...) finden sich in der entsprechenden README-Datei im meta-vader2 Repository
+
+## Hardware / Bitstream ändern
+Aus Vivado kann eine .xsa-Datei exportiert werden, die die Konfiguration der Logik, des Prozessorsystems, der Interconnects usw. beinhaltet. Dazu nach erstellen des Bitstreams in Vivado auf *File->Export->Export Hardware* und anschließend *Include Bitstream* auswählen.
+
+Die erzeugte .xsa-Datei wird in `system.xsa` umbenannt und in das Verzeichnis `build` kopiert. Wird anschließend das vader2-image neu gebaut, lädt der Bootloader die Hardware-Konfiguration automatisch beim Starten des Kernels.
+
+Zum schnellen Testen empfiehlt es sich aber, Logik-Designs direkt aus Vivado über JTAG in die Programmierbare Logik zu flashen. Das funktioniert auch während der Prozessor/Linux läuft.
